@@ -4,13 +4,13 @@ import java.util.Scanner;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class PasswordRule1 {
+public class PasswordRule2 {
 	public boolean passwrdRule(String inputStr) {
-		String passwordPattern = "^[A-Za-z]{8}$";
+		String passwordPattern = "^(?=.*[A-Z])[A-Za-z]{8}$";
 		Pattern regex = Pattern.compile(passwordPattern);
 		Matcher passwordMatcher = regex.matcher(inputStr);
 		if (passwordMatcher.matches()) {
-			System.out.println(inputStr + " succesfully loggedin and passed first rule.");
+			System.out.println(inputStr + " succesfully loggedin and passed second rule.");
 		} else {
 			System.out.println(inputStr + " is invalid password.Kindly input minimum 8 character.");
 		}
@@ -19,7 +19,7 @@ public class PasswordRule1 {
 	public static void main(String[] args) {
 		PasswordRule1 psswrd = new PasswordRule1();
 		Scanner sc = new Scanner(System.in);
-		System.out.println("Please log in using 8 character password.");
+		System.out.println("Please log in using 8 character password having one upper case.");
 		System.out.print("Enter the password : ");
 		String inputStr = sc.nextLine();
 		sc.close();
