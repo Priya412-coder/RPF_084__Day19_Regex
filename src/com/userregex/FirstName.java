@@ -8,7 +8,7 @@ public class FirstName {
 
 	public static void main(String[] args) {
 
-		String namePattern = "^[A-Z]{1}[a-z]{2,3}$";
+		String namePattern = "^[A-Z]{1}[a-z]{3,9}$";
 		Pattern regex = Pattern.compile(namePattern);
 
 		Scanner sc = new Scanner(System.in);
