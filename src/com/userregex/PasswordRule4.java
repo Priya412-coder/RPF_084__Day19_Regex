@@ -20,7 +20,7 @@ public class PasswordRule4 {
 	public static void main (String[] args) {
 		PasswordRule4 psswrd = new PasswordRule4();
 		Scanner sc = new Scanner(System.in);
-		System.out.println("Please log in using 8 character password having one upper case and one numeric number.");
+		System.out.println("Please login using 8 character password having one upper case and one numeric number.");
 		System.out.print("Enter the password : ");
 		String inputStr = sc.nextLine();
 		sc.close();
