@@ -16,11 +16,12 @@ public class PasswordRule1 {
 		}
 		return false;
 	}
+	
 	public static void main(String[] args) {
 		PasswordRule1 psswrd = new PasswordRule1();
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Please log in using 8 character password.");
-		System.out.print("Enter the password : ");
+		System.out.print("Enter the Password : ");
 		String inputStr = sc.nextLine();
 		sc.close();
 		psswrd.passwrdRule(inputStr);
